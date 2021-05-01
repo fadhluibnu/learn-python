@@ -12,13 +12,29 @@ member1 =  {'ID':101,
             'status member':'gold',
             }
 
-member2 = {'id':102,
-           'nama':'ujang',
-           'status member':'berlian'
-           }
 
-memberList = {101:member1, 102:member2}
-print(memberList)
+
+def nota ():
+     member2 = {'id': input("masukkan id : "),
+                'nama': input("masukkan nama : "),
+                'status member': input("masukkan status : ")
+                }
+     print("Peminjam Buku :")
+     print("ID : ",member2['id'])
+     print("Nama : ", member2['nama'])
+     print("Status Member : ", member2['status member'])
+
+nota()
+
+
+
+
+
+
+
+
+
+
 
 # print(member1['ID'])
 # print(member1['nama'])
