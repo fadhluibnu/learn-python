@@ -1,6 +1,8 @@
 #class
 class mahasiswa():
-     nama = 'nama'
+     def __init__(self, input_nama, input_nilai):
+          self.nama = input_nama
+          self.nilai = input_nilai
 
      def belajar(self, kondisi):
           print(self.nama,'sedang belajar', kondisi)
@@ -9,11 +11,7 @@ class mahasiswa():
           print(self.nama,'tidur di kelas')
 
 #main program
-otong = mahasiswa()
-ucup = mahasiswa()
-
-otong.nama = 'otong surotong'
-ucup.nama = 'michel ucup'
-
+otong = mahasiswa('otong surotong', 80)
+print(otong.nama)
+print(otong.nilai)
 otong.belajar('dengan giat')
-ucup.tidur()
